@@ -1,0 +1,110 @@
+.about-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    /* background-color: #950be6; */
+    background: linear-gradient(135deg, #8a4baf, #6610f2);;
+  }
+  
+  .hero-section {
+    /* background: linear-gradient(135deg, #8a4baf, #6610f2); */
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+  
+  .mission-section,
+  .values-section,
+  .team-section {
+    background: #ffffff;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #8a4baf;
+  }
+  
+  .mission-section p,
+  .values-section p,
+  .team-section p {
+    font-size: 1.1rem;
+    color: #555555;
+    line-height: 1.6;
+    
+  }
+  
+  .values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .value-item {
+    background: #fdfdfd;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 2px 2px 10px 5px #666;
+  }
+  
+  .value-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .team-member {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .team-member h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #333333;
+  }
+  
+  .team-member p {
+    font-size: 1rem;
+    color: #777777;
+  }
+  

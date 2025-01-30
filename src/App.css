@@ -1,0 +1,22 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  
+}
+
+.comman-btn{
+  background-color: aliceblue;
+  border: none;
+  color: #8a4baf;
+  padding: 8px 20px ;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+
+  &:hover{
+    transform: translateY(-1px);
+  }
+}

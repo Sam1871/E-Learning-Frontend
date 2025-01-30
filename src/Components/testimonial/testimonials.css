@@ -1,0 +1,123 @@
+.testimonial {
+    background-color: #fff;
+    padding: 40px 20px; /* Increased padding for better spacing */
+
+    h2 {
+        font-size: 36px;
+        text-align: center;
+        font-weight: bolder;
+        color: #7322a1;
+        margin-bottom: 40px; /* Added margin for better spacing */
+    }
+
+    .testimonials-cards {
+        display: flex;
+        flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+        justify-content: center; /* Center cards on the page */
+        gap: 40px;
+        
+        .testimonial-card {
+            width: 300px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-10px); /* Lift effect on hover */
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+            }
+
+            .student-image {
+                text-align: center;
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    background-size: cover;
+                    object-fit: cover;
+                    margin-top: 10px;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.1); /* Slight zoom on hover */
+                    }
+                }
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+                color: #333;
+                margin-top: 15px; /* Increased spacing for clarity */
+                font-style: italic; /* Italicize the message text */
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                margin-top: 15px; /* Increased spacing */
+
+                .User-name {
+                    font-size: 20px;
+                    color: #8a4baf;
+                    font-weight: bolder;
+                    text-align: center;
+                    margin-bottom: 5px; /* Added spacing below name */
+                }
+
+                .position {
+                    font-size: 16px;
+                    color: #666;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .testimonials-cards {
+            gap: 20px; /* Reduced gap on smaller screens */
+        }
+
+        .testimonial-card {
+            width: 100%; /* Full width on smaller screens */
+            max-width: 400px; /* Limit max width */
+        }
+
+        h2 {
+            font-size: 28px; /* Smaller title on smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 24px; /* Further reduced title size for very small screens */
+        }
+
+        .testimonial-card {
+            padding: 15px; /* Reduced padding for small screens */
+        }
+
+        .message {
+            font-size: 16px; /* Smaller message text */
+        }
+
+        .info .User-name {
+            font-size: 18px; /* Smaller name font size */
+        }
+
+        .info .position {
+            font-size: 14px; /* Smaller position text */
+        }
+    }
+}

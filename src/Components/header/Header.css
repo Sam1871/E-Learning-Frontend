@@ -1,0 +1,85 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #8a4baf;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    .logo {
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        transition: 2s;
+
+        @media (max-width: 768px) {
+            font-size: 15px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 14px; /* Further reduce font size on very small screens */
+        }
+    }
+
+    .link {
+        display: flex;
+        gap: 2rem;
+
+        @media (max-width: 768px) {
+            gap: 1rem; /* Reduce gap between links on smaller screens */
+        }
+
+        @media (max-width: 480px) {
+            flex-direction: column; /* Stack links vertically on very small screens */
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: #8a4baf;
+            width: 100%;
+            padding: 10px 0;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            display: none; /* Hide by default for small screens, show with JS toggle */
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 550;
+            transition: 0.2s;
+
+            &:hover {
+                transform: translateY(-4px);
+            }
+
+            @media (max-width: 480px) {
+                padding: 10px 15px; /* Increase padding for better touch interaction */
+            }
+        }
+    }
+
+    /* Hamburger menu for small screens */
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+
+        @media (max-width: 480px) {
+            display: flex;
+        }
+
+        span {
+            background: #fff;
+            border-radius: 2px;
+            height: 2px;
+            margin: 3px;
+            width: 25px;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    /* Show the navigation links when the hamburger menu is active */
+    .link.active {
+        display: flex;
+    }
+}

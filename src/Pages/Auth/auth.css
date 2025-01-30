@@ -1,0 +1,98 @@
+.auth_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background-color: #fff;
+    flex-direction: row; /* Default flex direction */
+
+    img {
+        width: 700px;
+        height: 500px;
+
+        @media (max-width: 768px) {
+            display: none; /* Hide image on smaller screens */
+        }
+    }
+
+    .auth_form {
+        margin-left: 200px;
+        background-color: #8a4baf;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        text-align: center;
+
+        @media (max-width: 1024px) {
+            margin-left: 50px; /* Reduce margin on smaller screens */
+        }
+
+        @media (max-width: 768px) {
+            margin-left: 0; /* Remove margin on small screens */
+            width: 100%; /* Make form full-width on small screens */
+            max-width: 300px; /* Add max-width to control form size */
+            padding: 20px; /* Reduce padding on smaller screens */
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 15px;
+
+            @media (max-width: 768px) {
+                font-size: 20px; /* Smaller font size on small screens */
+            }
+        }
+
+        form {
+            text-align: left;
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+
+                @media (max-width: 768px) {
+                    font-size: 13px; /* Smaller font size on small screens */
+                }
+            }
+
+            input {
+                width: 100%; /* Full width for input fields */
+                border-radius: 5px;
+                padding: 5px;
+                border: 1px solid #ccc;
+                margin-bottom: 15px;
+                box-sizing: border-box; /* Ensure padding doesn't affect width */
+
+                @media (max-width: 768px) {
+                    padding: 8px; /* Slightly more padding for touchscreens */
+                }
+            }
+        }
+
+        p {
+            color: #fff;
+            font-size: 15px;
+            margin-top: 15px;
+
+            @media (max-width: 768px) {
+                font-size: 14px; /* Adjust text size for smaller screens */
+            }
+
+            a {
+                color: black;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        height: auto; /* Adjust height to fit content */
+        padding: 20px; /* Add padding to the container */
+    }
+}
