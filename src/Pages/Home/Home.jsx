@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css"
 import {useNavigate} from  "react-router-dom"
-import Testimonials from "../../Components/testimonial/testimonials";
+import Testimonials from "../../Components/testimonial/Testimonials";
 import Context from "../../Components/Context/Context";
 import ReverceContext from "../../Components/Context/ReverceContext";
 
