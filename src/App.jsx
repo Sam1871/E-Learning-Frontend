@@ -17,7 +17,7 @@ import Paymentsuccess from "./Pages/PaymentSuccess/Paymentsuccess"
 import PaymentForm from "./Pages/paymentpage/Paymentpage"
 import Dashboard from "./Pages/Dashboard/Dashboard"
 import CourseStudy from "./Pages/CourseStudy/CourseStudy"
-import Lecture from "./Pages/lectures/lecture";
+import Lecture from "./Pages/lectures/Lecture";
 import Admin_Dashboard from "./admin/Dashboard/Admin_Dashboard"
 import Admin_course from "./admin/Courses/Admin_course"
 import Admin_users from "./admin/Users/Admin_users"
