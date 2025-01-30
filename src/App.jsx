@@ -10,7 +10,7 @@ import Verify from "./Pages/Auth/Verify";
 import About from "./Pages/About/About";
 import Profile from "./Pages/Profile/Profile";
 import { UserData } from "./Context/UserContext";
-import Loading from "./Components/Loder/loading";
+import Loading from "./Components/Loder/Loading";
 import Allcourses from "./Components/CourseCard/Allcourses";
 import CourseDiscription from "./Pages/CourseDiscription/CourseDiscription";
 import Paymentsuccess from "./Pages/PaymentSuccess/Paymentsuccess"
