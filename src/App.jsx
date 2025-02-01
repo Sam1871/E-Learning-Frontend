@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home/home";
+import Home from "./Pages/Home/Home";
 import Header from "./Components/header/Header";
 import Footer from "./Components/footer/Footer";
 import Login from "./Pages/Auth/Login";
@@ -10,14 +10,14 @@ import Verify from "./Pages/Auth/Verify";
 import About from "./Pages/About/About";
 import Profile from "./Pages/Profile/Profile";
 import { UserData } from "./Context/UserContext";
-import Loading from "./Components/Loder/loading";
+import Loading from "./Components/Loder/Loading";
 import Allcourses from "./Components/CourseCard/Allcourses";
 import CourseDiscription from "./Pages/CourseDiscription/CourseDiscription";
 import Paymentsuccess from "./Pages/PaymentSuccess/Paymentsuccess"
 import PaymentForm from "./Pages/paymentpage/Paymentpage"
 import Dashboard from "./Pages/Dashboard/Dashboard"
 import CourseStudy from "./Pages/CourseStudy/CourseStudy"
-import Lecture from "./Pages/lectures/lecture";
+import Lecture from "./Pages/lectures/Lecture";
 import Admin_Dashboard from "./admin/Dashboard/Admin_Dashboard"
 import Admin_course from "./admin/Courses/Admin_course"
 import Admin_users from "./admin/Users/Admin_users"

@@ -14,6 +14,8 @@ const Login = () => {
   const submitHandler = async(e)=>{
     e.preventDefault();
      await loginUser(email, password, navigate,fetchMyCourse);
+     setEmail("");
+     setPassword("");
 
   }
   return (

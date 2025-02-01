@@ -13,7 +13,9 @@ const Register = () => {
   const submitHandler = async (e) =>{
       e.preventDefault()
       await registerUser(name, email, password, navigate);
-      // console.table(email,password,name)
+      setEmail("");
+      setName("");
+      setPassword("");
   }
   return (   
      <div className="auth_page">
