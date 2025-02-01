@@ -31,12 +31,14 @@ const Login = () => {
                 
                 <label htmlFor="email">Eamil</label>
                 <input type="email" 
+                placeholder="Please Enter Your Email"
                 value={email} 
                 onChange={e=> setEmail(e.target.value)}  required/>
 
                 <label htmlFor="password">Password</label>
                 <input type="password" 
                 value={password} 
+                placeholder="Please Enetr your Password"
                 onChange={e=> setPassword(e.target.value)}
                 required/>
 
