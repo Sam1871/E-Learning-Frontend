@@ -41,7 +41,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to={"/admin/dashboard"}>
+          <Link to={"/account"}>
             <div className="icon">
               <AiOutlineLogout />
               <span>

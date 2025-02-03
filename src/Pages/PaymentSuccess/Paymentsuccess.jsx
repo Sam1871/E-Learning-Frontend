@@ -5,7 +5,7 @@ import "./paymentsuccess.css"
 
 const Paymentsuccess = ({ user }) => {
     
-    console.log(user)
+    
   return (
     <div className="payment-success-page">
        {
@@ -13,7 +13,7 @@ const Paymentsuccess = ({ user }) => {
             <div className="success-message">
                 <h2>Payment Successful</h2>
                 <p>Your course subscription has been activated</p>
-                <Link to={`${user._id}/dashboard`} className="comman-btn" 
+                <Link to={`/${user._id}/dashboard`} className="comman-btn" 
                     style={{ backgroundColor: "red", color: "#fff" }}
                 >
                     Go to Dashboad

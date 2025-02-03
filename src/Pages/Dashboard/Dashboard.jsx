@@ -6,6 +6,7 @@ import Course_card from "../../Components/CourseCard/Course_card";
 const Dashboard = () => {
     const {mycourse, fetchMyCourse} = useCourseData();
     const token = localStorage.getItem("token")
+    
     useEffect(()=>{
       fetchMyCourse(token)
     },[])

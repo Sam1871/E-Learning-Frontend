@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./paymentpage.css";
 import { useNavigate, useParams} from "react-router-dom";
 import {useCourseData} from "../../Context/CourseContext"
@@ -21,7 +21,7 @@ const PaymentForm = ({ user }) => {
 
   const userId = user?._id;
 
-  const { addCourse, } = useCourseData();
+  const { addCourse, fetchMyCourse } = useCourseData();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -48,7 +48,7 @@ const PaymentForm = ({ user }) => {
 
     try {
       await addCourse(userId, courseId,navigate,token);
-      console.log("Course added successfully!");
+     
       // You can navigate or display a success message here
       
     } catch (err) {
@@ -56,6 +56,12 @@ const PaymentForm = ({ user }) => {
       setError("Failed to complete the payment. Please try again.");
     }
   };
+
+  useEffect(()=>{
+    fetchMyCourse()
+  },[])
+
+
 
   return (
     <div className="main-container">

@@ -21,6 +21,8 @@ import Lecture from "./Pages/lectures/Lecture";
 import Admin_Dashboard from "./admin/Dashboard/Admin_Dashboard"
 import Admin_course from "./admin/Courses/Admin_course"
 import Admin_users from "./admin/Users/Admin_users"
+import ForgotPassword from "./Pages/Auth/ForgotPassword";
+import ResetPassword from "./Pages/Auth/ResetPassword"
 
 
 
@@ -44,6 +46,8 @@ const App = () => {
            <Route path="/login" element={isAuth? <Home/> :<Login/>} />
            <Route path="/register" element={isAuth? <Home/> :<Register/>} />
            <Route path="/verify" element={isAuth? <Home/> :<Verify/>} />
+           <Route path="/forgotPassword" element={isAuth? <Home/> :<ForgotPassword/>} />
+           <Route path="/reset-password/:token" element={isAuth? <Home/> :<ResetPassword/>} />
            <Route path="/Course/:id" element={isAuth? <CourseDiscription user={user}/> :<Login/>} />
            <Route path="/payment-success" element={isAuth? <Paymentsuccess user={user}/>: <Login/>} />
            <Route path="/payment-page/:id" element={isAuth? <PaymentForm user={user}/> : <Login/>} />

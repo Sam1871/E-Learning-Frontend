@@ -6,6 +6,8 @@ import { CourseContextProvider } from './Context/CourseContext.jsx'
 
 export const server = "https://e-learning-server-7dir.onrender.com"
 
+// export const server = "http://localhost:5000"
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <UserContextProvider>
