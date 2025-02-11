@@ -35,7 +35,7 @@ const App = () => {
   return (
     <>
       {loading? <Loading/> : 
-        <BrowserRouter>
+        <BrowserRouter basename="/">
         <Header isAuth={isAuth}/>
          <Routes>
            <Route path="/" element={<Home />} />
