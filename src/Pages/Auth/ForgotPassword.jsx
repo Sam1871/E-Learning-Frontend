@@ -32,7 +32,7 @@ const ForgotPassword = () => {
     <div className="auth_form">
       <h2>Forgot Password</h2>
       <form  onSubmit={handleSubmit}>
-          <label htmlFor="text">Eamil</label>
+          <label htmlFor="text">Email</label>
           <input type="text" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Please Enter your email" required/>
           <button disabled={btnLoading} className="comman-btn">
             {

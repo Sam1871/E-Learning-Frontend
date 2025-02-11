@@ -42,7 +42,7 @@ const Register = () => {
           <input type="password" 
             value={password} 
             onChange={e=> setPassword(e.target.value)}
-          required placeholder="Please Enter Your Name"/>
+          required placeholder="Please Enter Your Password"/>
 
           <button type="submit" disabled={btnLoading} className="comman-btn">
             {btnLoading ? "Please Wait ....": "Register"}

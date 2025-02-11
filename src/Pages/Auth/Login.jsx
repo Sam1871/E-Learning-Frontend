@@ -29,7 +29,7 @@ const Login = () => {
 
             <form onSubmit={submitHandler}>
                 
-                <label htmlFor="email">Eamil</label>
+                <label htmlFor="email">Email</label>
                 <input type="email" 
                 placeholder="Please Enter Your Email"
                 value={email} 
@@ -38,7 +38,7 @@ const Login = () => {
                 <label htmlFor="password">Password</label>
                 <input type="password" 
                 value={password} 
-                placeholder="Please Enetr your Password"
+                placeholder="Please Enter your Password"
                 onChange={e=> setPassword(e.target.value)}
                 required/>
 
